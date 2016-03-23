@@ -1,0 +1,15 @@
+
+.value_body{
+    padding-top: 15px;
+}
+
+.value-info-name{
+    width: 80px;
+}
+
+.panel-body{
+    padding: 0;
+}
+.panel-body > .table {
+    margin-bottom: 0;
+}

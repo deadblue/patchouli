@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="static/css/patchouli-value.css" >
+</head>
+<body>
+<div class="container-fluid value_body">
+    <div class="panel panel-default">
+        <table class="table">
+            <tbody>
+                <tr><td class="value-info-name">Key</td><td>{{ key }}</td></tr>
+                <tr><td class="value-info-name">Type</td><td>{{ type }}</td></tr>
+                <tr><td class="value-info-name">TTL</td><td>{{ ttl }}</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">Content</div>
+        <div class="panel-body">
+            {% set value_tpl = 'value-' + type + '.html' %}
+            {% include value_tpl %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
